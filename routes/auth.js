@@ -1,10 +1,11 @@
 /*
     Rutas de usuarios / Auth
-    host + /api/auth
+    [host]/api/auth
 */
 
 const { Router } = require('express');
 const { check } = require('express-validator')
+
 const router = Router();
 
 const { crearUsuario, loginUsuario, revalidarToken } = require('../controllers/auth');
