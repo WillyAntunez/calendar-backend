@@ -108,7 +108,7 @@ const eliminarEvento = async (req, res = response) => {
         return res.json({
             ok: true,
             evento,
-        })
+        });
 
     } catch (error) {
         console.log(error);
